@@ -1,0 +1,11 @@
+Flask
+requests
+wit
+google-api-core==1.21.0
+google-auth==1.19.0
+google-cloud-speech==1.3.2
+googleapis-common-protos==1.52.0
+grpcio==1.30.0
+google-cloud-texttospeech
+firebase-admin
+gunicorn

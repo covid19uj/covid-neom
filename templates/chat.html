@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Venit - Neom</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+  <audio hidden>
+    <source id="source" src="" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <div id="loading-outer">
+    <div id="loading-inner">
+      <div class="visual row">
+        <canvas></canvas>
+        <audio id="recorder" muted hidden></audio>
+      </div>
+      <img src="http://www.markhillard.com/sandbox/micon.png" alt="">
+    </div>
+  </div>
+
+  <div id="microphone"></div>
+  <div class="container">
+    <!-- <div class="head row">
+        <h1>Venit</h1>
+    </div> -->
+
+
+  </div>
+  <!-- partial -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.dom.js'></script>
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/addons/p5.sound.js'></script> -->
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
